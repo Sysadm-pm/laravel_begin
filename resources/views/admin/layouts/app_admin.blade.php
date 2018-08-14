@@ -34,13 +34,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle btn btn-sm" data-toggle="dropdown" role="button" aria-expanded="false">Blog</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li ><a href="#" class="btn btn-sm">Category</a> </li>
-                            <li ><a href="#" class="btn btn-sm">Materials</a></li>
-
-                        </ul>
+                      <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            XXX <span class="caret"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{route('admin.category.index')}}">Категория</a>
+                            <a class="dropdown-item" href="#">Материалы</a>
+                          </div>
                       </li>
                     </ul>
 
