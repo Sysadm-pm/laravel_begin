@@ -32,7 +32,6 @@
     <div class="col-sm-6"><a class="btn btn-block btn-default" href="#">Создать категорию</a> <a class="list-group-item" href="#"> </a>
       <h4><a class="list-group-item" href="#">Категория первая</a></h4>
       <a class="list-group-item" href="#"> </a>
-      
       <p><a class="list-group-item" href="#">Кол-во материалов</a></p>
       <a class="list-group-item" href="#"> </a>
     </div>
