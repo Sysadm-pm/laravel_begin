@@ -17,10 +17,13 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin','middleware'=>['auth']],fu
 });
 
 
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('admin', 'AdminController@index')->name('admin.index');
+Route::get('minor', 'AdminController@minor')->name('admin.minor');
+//Route::get('home', 'HomeController@index')->name('home');

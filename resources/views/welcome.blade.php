@@ -69,7 +69,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/admin') }}">Admin</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
@@ -79,15 +79,19 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Эксперементариум
                 </div>
-
+                <div class="btn btn-warning">
+                  {{ isset(Auth::user()->name) ? Auth::user()->name : 'Guest' }}<br/>
+                  {{ isset(Auth::user()->email) ? Auth::user()->email : '' }}<br/>
+                  {{ isset(Auth::user()->created_at) ?Auth::user()->created_at : '' }}<br/><br/>
+                </div>
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Laracasts</a>
+                    <a href="#">News</a>
+                    <a href="#">Forge</a>
+                    <a href="#">GitHub</a>
                 </div>
             </div>
         </div>
